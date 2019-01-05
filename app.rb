@@ -8,7 +8,6 @@ class App < Sinatra::Base
   end
 
   post "/" do
-    @phrase_obj = PigLatinizer.new
     @phrase = params[:user_phrase]
   end
 end
