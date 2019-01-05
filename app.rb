@@ -1,4 +1,5 @@
 require_relative 'config/environment'
+require_relative 'moels/piglatinizer'
 
 class App < Sinatra::Base
 
