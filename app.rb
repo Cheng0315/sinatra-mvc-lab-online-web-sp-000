@@ -9,6 +9,6 @@ class App < Sinatra::Base
 
   post "/piglatinize" do
     @phrase = PigLatinizer.new
-    @latinize_phrase = phrase.piglatinize(params[:user_phrase])
+    phrase.piglatinize(params[:user_phrase])
   end
 end
