@@ -6,4 +6,9 @@ class App < Sinatra::Base
   get '/' do
     erb :user_input
   end
+
+  post "/" do
+    phrase = PigLatinizer.new
+    phrase.piglatinize(params[:user_phrase])
+  end
 end
