@@ -15,7 +15,7 @@ class PigLatinizer
 
   def find_first_vowel_idx(word)
     vowels = "aeiou"
-    word.downcase.split("").each do |char, idx|
+    word.downcase.split("").each_with_index do |char, idx|
       return idx if vowels.include?(char)
     end
   end
