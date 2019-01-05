@@ -3,7 +3,7 @@ class PigLatinizer
   def piglatinize(words)
     words_arr = words.split(" ")
     words_arr.map do |word|
-      if word.length == 1
+      if "aeiou".include?(word[0]) 
         word + "way"
       else
         slice_at_idx = find_first_vowel_idx(word)
