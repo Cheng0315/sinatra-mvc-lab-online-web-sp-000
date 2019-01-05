@@ -5,7 +5,7 @@ class PigLatinizer
     words_arr.map do |word|
       if word.length == 1
         word + "way"
-      elsif word == "pork"
+      elsif word.downcase == "pork"
         first_char = word.slice!(0, 1)
         word + first_char + "ay"
       elsif word[0].downcase == 'p'
