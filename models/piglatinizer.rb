@@ -1,4 +1,4 @@
-class piglatinizer
+class Piglatinizer
   attr_accessor :text
 
   def initialize(text)
